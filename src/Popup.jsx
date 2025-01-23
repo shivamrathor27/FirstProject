@@ -6,7 +6,7 @@ const Popup = ({setShow}) => {
     }
   return (
     <div className='popup'>
-        <img className='popupImg' src='https://www.dpsgs.org/ghaziabad/images/toppers/pratyusha.jpg' />
+        <img className='popupImg' src='images/logo.png' />
         <button onClick={closePopup}>X</button>
     </div>
   )

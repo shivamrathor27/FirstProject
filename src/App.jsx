@@ -10,7 +10,7 @@ import Map from './Map'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
 
   function openPopup(){
     setShow(true)
