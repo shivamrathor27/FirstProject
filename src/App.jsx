@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Body from './body'
+import Body from './Body'
 import Footer from './Footer'
 import ResponsiveAppBar from './ResponsiveAppBar'
 import Popup from './Popup'
 import "./style.css"
 import GymImageList from './GymImageList'
-import Contact from './contact'
-import Map from './map'
+import Contact from './Contact'
+import Map from './Map'
 
 function App() {
   const [count, setCount] = useState(0)
