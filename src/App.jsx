@@ -1,35 +1,19 @@
 import { useState } from 'react'
-import Body from './Body'
-import Footer from './Footer'
-import ResponsiveAppBar from './ResponsiveAppBar'
-import Popup from './Popup'
-import "./style.css"
-import GymImageList from './GymImageList'
-import Contact from './Contact'
-import Map from './Map'
+import { Navbar, Popup, Hero } from './components'
+import { Services } from './pages'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
 
-  function openPopup(){
-    setShow(true)
-  }
+  document.body.style.overflow = show ? 'hidden' : 'visible'
 
   return (
     <>
-    {show &&
-      <Popup setShow={setShow}/>
-    }
-      <ResponsiveAppBar />
-      <Body />
-      <GymImageList />
-      <div className='contactMap'>
-        <Contact />
-        <Map />
-      </div>
-      <Footer />
-      
+      {show && <Popup setShow={setShow} />}
+      <Navbar />
+      <Hero />
+      <Services />
     </>
   )
 }
