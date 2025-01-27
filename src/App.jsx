@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Navbar, Popup, Hero } from './components'
-import { Services } from './pages'
+import { Services, Gallery } from './pages'
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+      <Gallery />
     </>
   )
 }

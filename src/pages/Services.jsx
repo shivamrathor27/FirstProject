@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/services.css'
-import {Header} from '../components'
+import { Header } from '../components'
 
 
 const Services = () => {
@@ -12,7 +12,8 @@ const Services = () => {
                     <li className="services_item">
                         <img src="" alt="image" className="card services_item-img" />
                         <div className="card services_item-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam ex corrupti nisi at, tenetur aut neque cupiditate eos soluta labore, inventore asperiores. Rerum fugit omnis eveniet eius maxime accusamus!
+                            <h1>Service#{i + 1}</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ducimus possimus? Exercitationem, dolor similique ducimus voluptates adipisci perferendis nisi suscipit minima, voluptate consectetur eos iste maxime pariatur totam, nihil ullam!</p>
                         </div>
                     </li>
                 ))}

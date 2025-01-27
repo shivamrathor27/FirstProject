@@ -13,19 +13,19 @@
 }
 
 .card {
-    height: 200px;
-    aspect-ratio: 3/2;
-    border-radius: 20px;
+  width: 400px;
+  border-radius: 20px;
 }
 
 .services_item-img {
   background-color: rgba(0, 0, 0, 0.6);
+  aspect-ratio: 3/2;
 }
 
 .services_item-content {
-    text-align: justify;
+  text-align: center;
 }
 
-.services ul li:nth-child(even){
-    flex-direction: row-reverse;
+.services ul li:nth-child(even) {
+  flex-direction: row-reverse;
 }
