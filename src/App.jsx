@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Navbar, Popup, Hero } from './components'
-import { Services, Gallery } from './pages'
+import { Services, Gallery, Membership } from './pages'
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
       <Hero />
       <Services />
       <Gallery />
+      <Membership />
     </>
   )
 }

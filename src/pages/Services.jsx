@@ -9,7 +9,7 @@ const Services = () => {
             <Header title="SERVICES" />
             <ul className='services_container'>
                 {Array(4).fill().map((n, i) => (
-                    <li className="services_item">
+                    <li key={i} className="services_item">
                         <img src="" alt="image" className="card services_item-img" />
                         <div className="card services_item-content">
                             <h1>Service#{i + 1}</h1>

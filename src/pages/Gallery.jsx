@@ -7,10 +7,8 @@ const Gallery = () => {
     const totalSlides = 5
 
     function adjustSlide() {
-        // set limit
         const slides = document.getElementsByClassName('slide');
         [...slides].forEach((slide) => {
-            console.log(slide)
             slide.style.transform = `translateX(-${100 * currSlide.current}%)`
         })
     }
