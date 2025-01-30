@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navbar, Popup, Hero } from './components'
+import { Navbar, Popup, Hero, Contact, Footer } from './components'
 import { Services, Gallery, Membership } from './pages'
 
 
@@ -16,6 +16,8 @@ function App() {
       <Services />
       <Gallery />
       <Membership />
+      <Contact />
+      <Footer />
     </>
   )
 }
