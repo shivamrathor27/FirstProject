@@ -1,12 +1,7 @@
 import { useState } from 'react'
-import Body from './Body'
-import Footer from './Footer'
-import ResponsiveAppBar from './ResponsiveAppBar'
-import Popup from './Popup'
-import "./style.css"
-import GymImageList from './GymImageList'
-import Contact from './Contact'
-import Map from './Map'
+import { Navbar, Popup, Hero, Contact, Footer } from './components'
+import { Services, Gallery, Membership } from './pages'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,18 +13,14 @@ function App() {
 
   return (
     <>
-    {show &&
-      <Popup setShow={setShow}/>
-    }
-      <ResponsiveAppBar />
-      <Body />
-      <GymImageList />
-      <div className='contactMap'>
-        <Contact />
-        <Map />
-      </div>
+      {show && <Popup setShow={setShow} />}
+      <Navbar />
+      <Hero />
+      <Services />
+      <Gallery />
+      <Membership />
+      <Contact />
       <Footer />
-      
     </>
   )
 }
