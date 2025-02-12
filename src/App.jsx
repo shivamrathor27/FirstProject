@@ -4,12 +4,9 @@ import { Services, Gallery, Membership } from './pages'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
 
-  function openPopup(){
-    setShow(true)
-  }
+  document.body.style.overflow = show ? 'hidden' : 'visible'
 
   return (
     <>

@@ -1,0 +1,40 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color) ;
+    padding: 10px;
+    display: flex;
+    z-index: 999;
+}
+
+.nav-logo {
+    height: 30px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+}
+
+.nav-contact {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+}

@@ -1,0 +1,9 @@
+.about {
+    width: 100%;
+    margin: 20px;
+}
+
+.about ul {
+    display: flex;
+    flex-direction: column;
+}
