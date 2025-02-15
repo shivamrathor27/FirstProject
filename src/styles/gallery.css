@@ -12,13 +12,14 @@
   min-width: 100%;
   padding: 0 2rem;
   height: 70vh;
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .slide-image {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: black;
 }
 
@@ -27,13 +28,13 @@
   top: 0;
   height: 100%;
   width: 10%;
-  background-color: transparent;
+  background: transparent;
 }
 
 .slider-button.left {
-  left: 5%;
+  left: 0%;
 }
 
 .slider-button.right {
-  right: 5%;
+  right: 0%;
 }

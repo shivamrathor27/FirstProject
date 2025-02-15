@@ -9,6 +9,7 @@
     --secondary-color: #c79039;
     --bg-color: #232323;
     --text-color: white;
+    --bg-nav: #232323;
     height: 100%;
     width: 100%;
     color: var(--text-color);
@@ -16,6 +17,16 @@
     background-color: var(--bg-color);
     scroll-behavior: smooth;
     scroll-padding-top: 60px
+}
+
+.dark {
+    --primary-color: rgb(207, 19, 5);
+    --secondary-color: #c79039;
+    --bg-color: white;
+    --text-color: black;
+    --bg-nav: var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 a {

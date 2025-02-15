@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   width: min-content;
-  margin: auto;
+  margin: 1rem auto;
   border: 1px solid black;
   border-radius: 20px;
   text-wrap: nowrap;
@@ -26,14 +26,17 @@
 
 .membership {
   display: flex;
+  justify-content: center;
   gap: 2rem;
   height: 70vh;
-  margin: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+  background: url('E:\New folder\FirstProject\public\images\thegym1.jpg');
 }
 
 .plans {
   position: relative;
-  width: 100%;
+  min-width: 450px;
   height: 100%;
   padding: 10px;
   background-color: white;
@@ -48,6 +51,10 @@
 
 .plans ul {
   margin: 2rem;
+}
+
+.plan-terms {
+  color: red;
 }
 
 .plan-contact {

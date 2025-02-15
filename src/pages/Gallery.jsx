@@ -1,10 +1,21 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Header } from '../components'
 import '../styles/gallery.css'
+import data from '../data.json'
 
 const Gallery = () => {
     const currSlide = useRef(0);
-    const totalSlides = 5
+    
+    const totalSlides = data.gallery.length;
+    useEffect(()=>{
+        const id = setInterval(() => {
+            handleRight()
+        }, 4000);
+        
+        return ()=>{
+            clearInterval(id);
+        }
+    },[])
 
     function adjustSlide() {
         const slides = document.getElementsByClassName('slide');
@@ -27,9 +38,9 @@ const Gallery = () => {
             <Header title="GALLERY" />
             <div className="gallery-images">
                 <div className="slider">
-                    {Array(totalSlides).fill().map((n, i) => (
+                    {data.gallery.map((item, i) => (
                         <div key={i} className="slide">
-                            <div className="slide-image">Image</div>
+                            <div className="slide-image" style={{backgroundImage: `url(${item.photo})`}}></div>
                         </div>
                     ))}
                 </div>
