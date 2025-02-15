@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/services.css'
 import { Header } from '../components'
+import data from '../data.json'
 
 
 const Services = () => {
@@ -8,12 +9,12 @@ const Services = () => {
         <div className="services" id="services">
             <Header title="SERVICES" />
             <ul className='services_container'>
-                {Array(4).fill().map((n, i) => (
+                {data.services.map((service, i) => (
                     <li key={i} className="services_item">
-                        <img src="" alt="image" className="card services_item-img" />
+                        <img src={service.photo} alt="image" className="card services_item-img" />
                         <div className="card services_item-content">
-                            <h1>Service#{i + 1}</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ducimus possimus? Exercitationem, dolor similique ducimus voluptates adipisci perferendis nisi suscipit minima, voluptate consectetur eos iste maxime pariatur totam, nihil ullam!</p>
+                            <h1>{service.title}</h1>
+                            <p>{service.desc}</p>
                         </div>
                     </li>
                 ))}

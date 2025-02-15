@@ -5,7 +5,6 @@ import { Services, Gallery, Membership } from './pages'
 
 function App() {
   const [show, setShow] = useState(false)
-
   document.body.style.overflow = show ? 'hidden' : 'visible'
 
   return (

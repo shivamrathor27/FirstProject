@@ -1,38 +1,16 @@
 import React, { useRef, useState } from 'react'
 import { Header } from '../components'
 import '../styles/membership.css'
+import data from '../data.json'
 
 // sample data
 const memberships = {
-    durations: ['Month', 'Quarter', 'Year'],
+    durations: ['Month', 'Quarter', 'Half year', 'Year'],
     plans: [
         {
-            name: 'Basic',
-            price: [2000, 5000, 20000],
+            name: 'Plan Detail',
+            price: data.membership.map((plan)=>plan.price),
             features: [
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-            ]
-        },
-        {
-            name: 'Silver',
-            price: [3500, 9000, 35000],
-            features: [
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-            ]
-        },
-        {
-            name: 'Gold',
-            price: [4500, 12000, 50000],
-            features: [
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
                 'Lorem ipsum dolor.',
                 'Lorem ipsum dolor.',
                 'Lorem ipsum dolor.',
@@ -45,8 +23,6 @@ const Membership = () => {
     const active = useRef(null)
     const [activeDuration, setActiveDuration] = useState(0);
 
-    
-
     function handleDuration(i) {
         active.current.style.left = `${active.current.offsetWidth * i}px`;
         setActiveDuration(i)
@@ -56,8 +32,8 @@ const Membership = () => {
         <div id='membership'>
             <Header title='Membership' />
             <div className="duration-btn-container">
-                {memberships.durations.map((duration, i) => (
-                    <button key={i} className='duration-btn' onClick={() => handleDuration(i)}>{duration}</button>
+                {data.membership.map((plan, i) => (
+                    <button key={i} className='duration-btn' onClick={() => handleDuration(i)}>{plan.title}</button>
                 ))}
                 <div className='duration-btn active' ref={active}></div>
             </div>
@@ -72,7 +48,13 @@ const Membership = () => {
                                 <li key={i} className="feature">{feature}</li>
                             ))}
                         </ul>
-                        <button className="plan-contact">Enquire now</button>
+                        <h5 className='plan-terms'> <sup>*</sup>No refund</h5>
+                        <h5 className='plan-terms'><sup>*</sup>No adjustment</h5>
+                        <a
+                            href = {`https://wa.me/${data.contacts.whatsapp}?text=${data.contacts.wpmsg}`}
+                                // href="https://wa.me/9315352423?text=Hello, I need to join the gym!"
+                                target="_blank"><button className="plan-contact">Enquire now</button>
+                        </a>
                     </div>
                 ))}
             </div>
