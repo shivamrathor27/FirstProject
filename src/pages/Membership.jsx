@@ -75,9 +75,7 @@ const Membership = () => {
                 ))}
             </div>
         </div>
-
-        // -----------------
-
+            
         <div id='couplemembership'>
             <Header title='Couple Membership' />
             <div className="duration-btn-container">
