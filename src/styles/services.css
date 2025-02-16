@@ -29,3 +29,8 @@
 .services ul li:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.service_heading {
+  color: red;
+  margin-top: 1px;
+}

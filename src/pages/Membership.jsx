@@ -11,9 +11,24 @@ const memberships = {
             name: 'Plan Detail',
             price: data.membership.map((plan)=>plan.price),
             features: [
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
-                'Lorem ipsum dolor.',
+                // 'Lorem ipsum dolor.',
+                // 'Lorem ipsum dolor.',
+                // 'Lorem ipsum dolor.',
+            ]
+        },
+    ]
+}
+
+const couplememberships = {
+    durations: ['Month', 'Quarter', 'Half year', 'Year'],
+    plans: [
+        {
+            name: 'Couple Plan Detail',
+            price: data.coupleMembership.map((plan)=>plan.price),
+            features: [
+                // 'Lorem ipsum dolor.',
+                // 'Lorem ipsum dolor.',
+                // 'Lorem ipsum dolor.',
             ]
         },
     ]
@@ -29,8 +44,9 @@ const Membership = () => {
     }
 
     return (
+        <>
         <div id='membership'>
-            <Header title='Membership' />
+            <Header title='Single Membership' />
             <div className="duration-btn-container">
                 {data.membership.map((plan, i) => (
                     <button key={i} className='duration-btn' onClick={() => handleDuration(i)}>{plan.title}</button>
@@ -59,6 +75,40 @@ const Membership = () => {
                 ))}
             </div>
         </div>
+
+        // -----------------
+
+        <div id='couplemembership'>
+            <Header title='Couple Membership' />
+            <div className="duration-btn-container">
+                {data.coupleMembership.map((plan, i) => (
+                    <button key={i} className='duration-btn' onClick={() => handleDuration(i)}>{plan.title}</button>
+                ))}
+                <div className='duration-btn active' ref={active}></div>
+            </div>
+            <div className='membership'>
+                {couplememberships.plans.map((plan, i) => (
+                    <div key={i} className="plans">
+                        <h2>{plan.name}</h2>
+                        <h1>₹{plan.price[activeDuration]}</h1>
+                        <p>Per {couplememberships.durations[activeDuration]}</p>
+                        <ul>
+                            {plan.features.map((feature, i) => (
+                                <li key={i} className="feature">{feature}</li>
+                            ))}
+                        </ul>
+                        <h5 className='plan-terms'> <sup>*</sup>No refund</h5>
+                        <h5 className='plan-terms'><sup>*</sup>No adjustment</h5>
+                        <a
+                            href = {`https://wa.me/${data.contacts.whatsapp}?text=${data.contacts.wpmsg}`}
+                                // href="https://wa.me/9315352423?text=Hello, I need to join the gym!"
+                                target="_blank"><button className="plan-contact">Enquire now</button>
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </div>
+        </>
     )
 }
 

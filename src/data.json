@@ -79,9 +79,31 @@
             "price": "7,000/"
         }
     ],
+    "coupleMembership": [
+        {
+            "title": "Month",
+            "price": "1,300/"
+        },
+        {
+            "title": "Quarter",
+            "price": "2,200/"
+        },
+        {
+            "title": "Half Year",
+            "price": "3,500/"
+        },
+        {
+            "title": "Year",
+            "price": "6,000/"
+        }
+    ],
     "contacts": {
         "whatsapp": "9315352423",
-        "wpmsg": "Hello",
-        "address": ""
+        "wpmsg": "Hello, I need to know more about THE GYM!",
+        "address1": "Ground Floor, H.no-206",
+        "address2": "New Arya Nagar",
+        "address3": "Ghaziabad, Uttar Pradesh, 201001",
+        "landmark": "Shani Dev Temple",
+        "location": "THE+GYM/@28.6766523,77.4254443,21z/data=!4m6!3m5!1s0x390cf127db12921d:0xe12a14add18285ce!8m2!3d28.6765959!4d77.4258359!16s%2Fg%2F11vq7rqpqy?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
     }
 }
