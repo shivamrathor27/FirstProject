@@ -7,6 +7,7 @@ import data from '../data.json'
 const Services = () => {
     return (
         <div className="services" id="services">
+            <h2 className="service_heading" align="center">ONE STOP SOLUTION COMPLETE FAMILY GYM</h2>
             <Header title="SERVICES" />
             <ul className='services_container'>
                 {data.services.map((service, i) => (

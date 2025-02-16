@@ -82,7 +82,7 @@ export default {
     contacts: 
         {
             whatsapp: '9315352423',
-            wpmsg: 'Hello',
+            wpmsg: 'Hello, I need to know more about THE GYM!',
             address: ''
         }
     
