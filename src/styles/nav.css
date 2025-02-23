@@ -1,7 +1,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    background-color: var(--bg-nav) ;
+    background-color: var(--bg-nav);
     padding: 10px;
     display: flex;
     z-index: 999;
@@ -42,4 +42,41 @@ nav button:hover {
 .theme-icon {
     width: 30px;
     cursor: pointer;
+}
+
+.menu {
+    display: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-options {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav {
+        /* display: none; */
+        position: absolute;
+        right: 0;
+        top: 54px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        padding: 10px;
+    }
+    nav.hide {
+        display: none;
+    }
+
+    .menu {
+        display: unset;
+    }
+
 }

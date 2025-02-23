@@ -1,5 +1,6 @@
 export default {
     name: 'The Gym',
+    tagline: 'One stop fitness, family-friendly gym',
     services: [
         {
             title: 'KICK BOXING',
@@ -30,7 +31,7 @@ export default {
             title: 'ZUMBA',
             photo: 'https://thegym.in/img/the-gym-zumba.jpg',
             desc: 'Zumba is a high-energy dance workout that combines Latin and international music with fun, easy-to-follow moves. It’s a full-body cardio workout that feels more like a party than exercise! 🎶💪'
-        },        
+        },
     ],
     gallery: [
         {
@@ -62,6 +63,7 @@ export default {
         },
     ],
     membership: [
+        // add single price and couple price separatly
         {
             title: 'Month',
             price: '1,500/'
@@ -79,12 +81,10 @@ export default {
             price: '7,000/'
         }
     ],
-    contacts: 
-        {
-            whatsapp: '9315352423',
-            wpmsg: 'Hello, I need to know more about THE GYM!',
-            address: ''
-        }
-    
-
+    contacts:
+    {
+        whatsapp: '9315352423',
+        wpmsg: 'Hello, I need to know more about THE GYM!',
+        address: ''
+    }
 }
