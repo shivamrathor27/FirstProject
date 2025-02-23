@@ -22,7 +22,7 @@
 }
 
 .hero_content-title {
-    font-size: 8rem;
+    font-size: 13vw;
     color: var(--primary-color);
 }
 
@@ -32,5 +32,10 @@
     gap: 2rem;
     color: var(--secondary-color);
     text-decoration: underline;
+}
+
+.tagline {
+    color: white;
+    margin: 1rem;
 }
 

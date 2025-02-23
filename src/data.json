@@ -1,18 +1,14 @@
 {
     "name": "The Gym",
+    "tagline": "One stop fitness, family-friendly gym",
     "services": [
         {
-            "title": "KICK BOXING",
-            "photo": "https://thegym.in/img/the-gym-kikboxing.jpg",
-            "desc": "Kickboxing is an intense combat sport that combines elements of boxing and kicking techniques from martial arts like karate and Muay Thai. It’s great for fitness, self-defense, and competition."
-        },
-        {
-            "title": "AEROBCS",
+            "title": "Aerobic",
             "photo": "https://thegym.in/img/the-gym-aerobic.jpg",
             "desc": "Aerobics is a high-energy exercise that improves cardiovascular endurance, burns calories, and enhances overall fitness. It involves rhythmic movements, often set to music, combining cardio, strength, and flexibility exercises."
         },
         {
-            "title": "STRENGTH",
+            "title": "Strength Training",
             "photo": "https://thegym.in/img/the-gym-aerobic.jpg",
             "desc": "Strength training (also known as resistance training) is designed to build muscle, increase power, and improve endurance. It involves lifting weights, using machines, or bodyweight exercises to develop muscular strength and endurance."
         },
@@ -22,14 +18,14 @@
             "desc": "Free weights refer to weight training equipment like dumbbells, barbells, and kettlebells that are not attached to a machine. They allow for natural movement, engaging more muscles compared to machines."
         },
         {
-            "title": "POWER YOGA",
+            "title": "Weight Training",
             "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
-            "desc": "Power Yoga is a dynamic, fitness-based yoga style that combines strength, flexibility, and endurance. Unlike traditional yoga, it’s faster-paced, intense, and focuses on building muscle and burning calories."
+            "desc": "Weight training (also called resistance training) is a workout method that involves lifting weights to increase muscle strength, endurance, and size. It includes exercises using dumbbells, barbells, kettlebells, machines, and body weight."
         },
         {
-            "title": "ZUMBA",
-            "photo": "https://thegym.in/img/the-gym-zumba.jpg",
-            "desc": "Zumba is a high-energy dance workout that combines Latin and international music with fun, easy-to-follow moves. It’s a full-body cardio workout that feels more like a party than exercise! 🎶💪"
+            "title": "Core Exercises",
+            "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
+            "desc": "Core exercises target your abs, obliques, lower back, and deep stabilizing muscles. A strong core improves balance, posture, and overall strength, making daily activities and sports performance easier."
         }
     ],
     "gallery": [
@@ -105,5 +101,19 @@
         "address3": "Ghaziabad, Uttar Pradesh, 201001",
         "landmark": "Shani Dev Temple",
         "location": "THE+GYM/@28.6766523,77.4254443,21z/data=!4m6!3m5!1s0x390cf127db12921d:0xe12a14add18285ce!8m2!3d28.6765959!4d77.4258359!16s%2Fg%2F11vq7rqpqy?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
-    }
+    },
+    "facilities":[
+        {
+            "src":"images/f1.svg",
+            "title":"trainer"
+        },
+        {
+            "src":"images/f2.svg",
+            "title":"wifi"
+        },
+        {
+            "src":"images/f3.svg",
+            "title":"diet"
+        }
+    ]
 }

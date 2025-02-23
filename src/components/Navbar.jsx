@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/nav.css";
-import data from '../data.json'
+import data from "../data.json";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("false");
+  const menuBtn = useRef(null);
   const rootElement = document.getElementById("root");
+  const navElement = document.getElementsByTagName('nav');
   if (theme) {
     rootElement.classList.add("dark");
   } else {
     rootElement.classList.remove("dark");
   }
 
+  const handleMenuBtn = () => {
+    console.log(navElement);
+    
+    navElement[0].classList.toggle('hide');
+  }
+
   return (
     <div className="navbar">
       <img src="/logo.jpg" alt="Logo" className="nav-logo" />
-      <nav>
+      <nav className="hide" onClick={handleMenuBtn}>
         <button>
           <a href="#hero">Home</a>
         </button>
@@ -31,28 +39,31 @@ const Navbar = () => {
           <a href="#contact">Contact</a>
         </button>
       </nav>
-      {/* <button className='nav-contact'>Get in touch</button> */}
-      <a
-      href = {`https://wa.me/${data.contacts.whatsapp}?text=${data.contacts.wpmsg}`}
-        // href="https://wa.me/9315352423?text=Hello, I need to join the gym!"
-        target="_blank"
-      >
+      <div className="nav-options">
+        <a
+          href={`https://wa.me/${data.contacts.whatsapp}?text=${data.contacts.wpmsg}`}
+          target="_blank"
+          >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            width="40"
+            height="30"
+            alt="WhatsApp"
+            />
+        </a>
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-          width="40"
-          height="30"
-          alt="WhatsApp"
-        />
-      </a>
-      <img
-        onClick={() => setTheme(!theme)}
-        className="theme-icon"
-        src={theme ? "theme.svg" : "theme-white.svg"}
-        alt=""
-        srcset=""
-      />
+          onClick={() => setTheme(!theme)}
+          className="theme-icon"
+          src="theme.svg"
+          alt=""
+          srcset=""
+          />
+        <img className="menu" src="menu.svg" alt="" onClick={handleMenuBtn} ref={menuBtn}/>
+      </div>
     </div>
   );
 };
 
 export default Navbar;
+
+/* <button className='nav-contact'>Get in touch</button> */
