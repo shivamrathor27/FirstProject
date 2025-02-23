@@ -28,38 +28,40 @@ const Contact = () => {
           />
           <button>Send</button>
         </div>
-        <div className="newsletter">
-          <h2>Subscribe to newsletter</h2>
-          <div className="subscribe-ip">
-            <input
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="Enter your Email"
-            />
-            <button>Subscribe</button>
+        <div className="contact-other">
+          <div className="newsletter">
+            <h2>Subscribe to newsletter</h2>
+            <div className="subscribe-ip">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Enter your Email"
+              />
+              <button>Subscribe</button>
+            </div>
           </div>
-        </div>
-        <div className="contact-info">
-          <h2>Address</h2>
-          <p>{data.contacts.address1}</p>
-          <p>{data.contacts.address2}</p>
-          <p>{data.contacts.address3}</p>
-          <p>
-            <b>Landmark: </b>
-            {data.contacts.landmark}
-          </p>
-          <p>
-            <b>Phone: </b>+91 {data.contacts.whatsapp}
-          </p>
-          <a
-            href={`https://www.google.com/maps/place/${data.contacts.location}`}
-            target="_blank"
-          >
-            <img src="map.svg" alt="" className="map-logo"/>
-            View on google map
-          </a>
-          {data.contacts.address}
+          <div className="contact-info">
+            <h2>Address</h2>
+            <p>{data.contacts.address1}</p>
+            <p>{data.contacts.address2}</p>
+            <p>{data.contacts.address3}</p>
+            <p>
+              <b>Landmark: </b>
+              {data.contacts.landmark}
+            </p>
+            <p>
+              <b>Phone: </b>+91 {data.contacts.whatsapp}
+            </p>
+            <a
+              href={`https://www.google.com/maps/place/${data.contacts.location}`}
+              target="_blank"
+            >
+              <img src="map.svg" alt="" className="map-logo" />
+              View on google map
+            </a>
+            {data.contacts.address}
+          </div>
         </div>
       </div>
     </div>

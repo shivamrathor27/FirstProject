@@ -30,22 +30,22 @@
     ],
     "gallery": [
         {
-            "photo": "public/images/thegym1.jpg"
+            "photo": "images/thegym1.jpg"
         },
         {
-            "photo": "public/images/thegym2.jpg"
+            "photo": "images/thegym2.jpg"
         },
         {
-            "photo": "public/images/thegym3.jpg"
+            "photo": "images/thegym3.jpg"
         },
         {
-            "photo": "public/images/thegym4.jpg"
+            "photo": "images/thegym4.jpg"
         },
         {
-            "photo": "public/images/thegym5.jpg"
+            "photo": "images/thegym5.jpg"
         },
         {
-            "photo": "public/images/thegym6.jpg"
+            "photo": "images/thegym6.jpg"
         },
         {
             "photo": "public/images/thegym7.jpg"
