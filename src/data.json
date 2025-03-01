@@ -1,119 +1,107 @@
 {
-    "name": "The Gym",
-    "tagline": "One stop fitness, family-friendly gym",
-    "services": [
-        {
-            "title": "Aerobic",
-            "photo": "https://thegym.in/img/the-gym-aerobic.jpg",
-            "desc": "Aerobics is a high-energy exercise that improves cardiovascular endurance, burns calories, and enhances overall fitness. It involves rhythmic movements, often set to music, combining cardio, strength, and flexibility exercises."
-        },
-        {
-            "title": "Strength Training",
-            "photo": "https://thegym.in/img/the-gym-aerobic.jpg",
-            "desc": "Strength training (also known as resistance training) is designed to build muscle, increase power, and improve endurance. It involves lifting weights, using machines, or bodyweight exercises to develop muscular strength and endurance."
-        },
-        {
-            "title": "FREE WEIGHTS",
-            "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
-            "desc": "Free weights refer to weight training equipment like dumbbells, barbells, and kettlebells that are not attached to a machine. They allow for natural movement, engaging more muscles compared to machines."
-        },
-        {
-            "title": "Weight Training",
-            "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
-            "desc": "Weight training (also called resistance training) is a workout method that involves lifting weights to increase muscle strength, endurance, and size. It includes exercises using dumbbells, barbells, kettlebells, machines, and body weight."
-        },
-        {
-            "title": "Core Exercises",
-            "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
-            "desc": "Core exercises target your abs, obliques, lower back, and deep stabilizing muscles. A strong core improves balance, posture, and overall strength, making daily activities and sports performance easier."
-        }
-    ],
-    "gallery": [
-        {
-            "photo": "images/thegym1.jpg"
-        },
-        {
-            "photo": "images/thegym2.jpg"
-        },
-        {
-            "photo": "images/thegym3.jpg"
-        },
-        {
-            "photo": "images/thegym4.jpg"
-        },
-        {
-            "photo": "images/thegym5.jpg"
-        },
-        {
-            "photo": "images/thegym6.jpg"
-        },
-        {
-            "photo": "public/images/thegym7.jpg"
-        },
-        {
-            "photo": "public/images/thegym8.jpg"
-        },
-        {
-            "photo": "public/images/thegym9.jpg"
-        }
-    ],
-    "membership": [
-        {
-            "title": "Month",
-            "price": "1,500/"
-        },
-        {
-            "title": "Quarter",
-            "price": "2,500/"
-        },
-        {
-            "title": "Half Year",
-            "price": "4,000/"
-        },
-        {
-            "title": "Year",
-            "price": "7,000/"
-        }
-    ],
-    "coupleMembership": [
-        {
-            "title": "Month",
-            "price": "1,300/"
-        },
-        {
-            "title": "Quarter",
-            "price": "2,200/"
-        },
-        {
-            "title": "Half Year",
-            "price": "3,500/"
-        },
-        {
-            "title": "Year",
-            "price": "6,000/"
-        }
-    ],
-    "contacts": {
-        "whatsapp": "9315352423",
-        "wpmsg": "Hello, I need to know more about THE GYM!",
-        "address1": "Ground Floor, H.no-206",
-        "address2": "New Arya Nagar",
-        "address3": "Ghaziabad, Uttar Pradesh, 201001",
-        "landmark": "Shani Dev Temple",
-        "location": "THE+GYM/@28.6766523,77.4254443,21z/data=!4m6!3m5!1s0x390cf127db12921d:0xe12a14add18285ce!8m2!3d28.6765959!4d77.4258359!16s%2Fg%2F11vq7rqpqy?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+  "name": "The Gym",
+  "tagline": "One stop fitness, family-friendly gym",
+  "services": [
+    {
+      "title": "Aerobic",
+      "photo": "https://thegym.in/img/the-gym-aerobic.jpg",
+      "desc": "Aerobics is a high-energy exercise that improves cardiovascular endurance, burns calories, and enhances overall fitness. It involves rhythmic movements, often set to music, combining cardio, strength, and flexibility exercises."
     },
-    "facilities":[
-        {
-            "src":"images/f1.svg",
-            "title":"trainer"
-        },
-        {
-            "src":"images/f2.svg",
-            "title":"wifi"
-        },
-        {
-            "src":"images/f3.svg",
-            "title":"diet"
-        }
-    ]
+    {
+      "title": "Strength Training",
+      "photo": "https://thegym.in/img/the-gym-aerobic.jpg",
+      "desc": "Strength training (also known as resistance training) is designed to build muscle, increase power, and improve endurance. It involves lifting weights, using machines, or bodyweight exercises to develop muscular strength and endurance."
+    },
+    {
+      "title": "FREE WEIGHTS",
+      "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
+      "desc": "Free weights refer to weight training equipment like dumbbells, barbells, and kettlebells that are not attached to a machine. They allow for natural movement, engaging more muscles compared to machines."
+    },
+    {
+      "title": "Weight Training",
+      "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
+      "desc": "Weight training (also called resistance training) is a workout method that involves lifting weights to increase muscle strength, endurance, and size. It includes exercises using dumbbells, barbells, kettlebells, machines, and body weight."
+    },
+    {
+      "title": "Core Exercises",
+      "photo": "https://thegym.in/img/the-gym-free-weight.jpg",
+      "desc": "Core exercises target your abs, obliques, lower back, and deep stabilizing muscles. A strong core improves balance, posture, and overall strength, making daily activities and sports performance easier."
+    }
+  ],
+  "gallery": [
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0048-mFe1alXjczYN8Wa7xKHH8yt8bVCrRS.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0050-tXXwJhoTV7Kvjt0mkGoQn25ZU3Lz8g.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0051-XxviPkJI4kCSFF9TPgL1jWDdTMLwZ5.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0053-lmNXstfy1wBART8hbY7ZnmlSV68pXz.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0056-YQcwMZLhUlZEiw47Ct7ZOO9BfyxUzo.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0057-dgsVY3z6tAj6NBU0BKSk5bfivPbz9t.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0058-8ieH5UJR2cOh8bu7qcPkrxIFBaFC62.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0059-wHMnsTlZu8nUdL8kgVrzCwb0LePQgC.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0060-riJlAR5pJnpZNbQowMcfSqJpOwjUyT.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0061-7s4MwMSLTTK7Wx2jKjiKBv2KVeMlnI.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0062-funGsfQ7A1eGU0vvenC5IwCk9Nlg7s.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0063-mTqIao5IHkkoPDinwJxvluOh34AKuh.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0064-qUs3WLmsT4mprnX5zeowDV8NlvZQbu.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0067-oSc2TGV2JxMEWJNHLyf0CDK9Y9I445.jpg",
+    "https://nuaaji77ak2ctatd.public.blob.vercel-storage.com/Portfolio/gallery/IMG-20250301-WA0068-zRxCgrXTGO5ND24xBf9fLL7YHQGjzs.jpg"
+  ],
+  "membership": [
+    {
+      "title": "Month",
+      "price": "1,500/"
+    },
+    {
+      "title": "Quarter",
+      "price": "2,500/"
+    },
+    {
+      "title": "Half Year",
+      "price": "4,000/"
+    },
+    {
+      "title": "Year",
+      "price": "7,000/"
+    }
+  ],
+  "coupleMembership": [
+    {
+      "title": "Month",
+      "price": "1,300/"
+    },
+    {
+      "title": "Quarter",
+      "price": "2,200/"
+    },
+    {
+      "title": "Half Year",
+      "price": "3,500/"
+    },
+    {
+      "title": "Year",
+      "price": "6,000/"
+    }
+  ],
+  "contacts": {
+    "whatsapp": "9315352423",
+    "wpmsg": "Hello, I need to know more about THE GYM!",
+    "address1": "Ground Floor, H.no-206",
+    "address2": "New Arya Nagar",
+    "address3": "Ghaziabad, Uttar Pradesh, 201001",
+    "landmark": "Shani Dev Temple",
+    "location": "THE+GYM/@28.6766523,77.4254443,21z/data=!4m6!3m5!1s0x390cf127db12921d:0xe12a14add18285ce!8m2!3d28.6765959!4d77.4258359!16s%2Fg%2F11vq7rqpqy?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+  },
+  "facilities": [
+    {
+      "src": "images/f1.svg",
+      "title": "trainer"
+    },
+    {
+      "src": "images/f2.svg",
+      "title": "wifi"
+    },
+    {
+      "src": "images/f3.svg",
+      "title": "diet"
+    }
+  ]
 }
