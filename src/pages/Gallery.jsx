@@ -40,7 +40,7 @@ const Gallery = () => {
                 <div className="slider">
                     {data.gallery.map((item, i) => (
                         <div key={i} className="slide">
-                            <div className="slide-image" style={{backgroundImage: `url(${item.photo})`}}></div>
+                            <div className="slide-image" style={{backgroundImage: `url(${item})`}}></div>
                         </div>
                     ))}
                 </div>
